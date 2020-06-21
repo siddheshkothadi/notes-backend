@@ -31,7 +31,7 @@
   
   <li>
     <p>Paste your Atlas uri inside .env file.</p>
-    <p>Make sure you replace &ltpassword&gt with the password that you have created & &ltdmname&gt with the name of your database in MongoDB.</p>
+    <p>Make sure you replace &ltpassword&gt with the password that you have created & &ltdbname&gt with the name of your database in MongoDB.</p>
     <p>Make two collections inside your database with following names:</p>
     <ul>
       <li>notes</li>
