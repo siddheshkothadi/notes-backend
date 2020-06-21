@@ -67,5 +67,5 @@
   
   </li>
   
-  <li>Test GET,POST,PUT,DELETE requests usisng <a href="https://www.postman.com/">Postman.</a></li>
+  <li>Test GET, POST, PUT, DELETE requests usisng <a href="https://www.postman.com/">Postman.</a></li>
   </ul>
