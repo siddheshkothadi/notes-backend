@@ -32,9 +32,9 @@
   </li>
   
   <li>
-    <p>Paste/Replace your Atlas uri inside .env file.</p>
-    <p>Make sure you replace &ltpassword&gt with the password that you have created & &ltdbname&gt with the name of your database in MongoDB.</p>
-    <p>Make two collections inside your database with following names:</p>
+    <p>Paste/Replace your ATLAS_URI & ATLAS_TEST_URI inside .env file.</p>
+    <p>Make sure you replace &ltpassword&gt with the password that you have created & &ltdbname&gt with the name of your resective databases in MongoDB, i.e notes_app for NODE_ENV = 'dev' and test for NODE_ENV = 'test' inside .env file.</p>
+    <p>Make two collections inside each of your databases with following names:</p>
     <ul>
       <li>notes</li>
       <li>users</li>
