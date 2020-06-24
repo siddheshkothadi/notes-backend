@@ -47,6 +47,7 @@ describe('Users', () => {
         }
         expect(res).to.have.status(200)
         done();
+        process.exit()
       });
     });
   });
