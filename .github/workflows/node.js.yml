@@ -29,3 +29,5 @@ jobs:
     - run: npm test
       env:
         CI: true
+        ATLAS_URI: ${{ secrets.ATLAS_URI }}
+        ATLAS_TEST_URI: ${{ secrets.ATLAS_TEST_URI }}
