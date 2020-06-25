@@ -50,5 +50,8 @@ describe('Users', () => {
       });
     });
   });
-  process.exit()
+
+  after(()=>{
+    process.exit();
+  }); 
 });
