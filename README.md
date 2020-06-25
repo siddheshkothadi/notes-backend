@@ -11,7 +11,6 @@
   node -v
   ```
   <p>If node is not installed, click <a href="https://nodejs.org/en/download/">here</a> to install node.</p>
-  <br>
   <p>To install nodemon:</p>
   
   ```
