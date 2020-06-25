@@ -58,7 +58,7 @@
   <li><p>Finally, run the server:</p>
   
   ```
-  npm test
+  npm run dev
   ```
   
   <p>Open the following link on your browser to run the server(default port is 3000):</p>
