@@ -47,9 +47,8 @@ describe('Users', () => {
         }
         expect(res).to.have.status(200)
         done();
-        //last test, therefore exit the terminal... for CI
-        process.exit()
       });
     });
   });
+  process.exit()
 });
