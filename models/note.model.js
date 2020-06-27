@@ -6,8 +6,6 @@ const notesSchema = new Schema({
   username: { type: String, required: true },
   title: {type: String, required:true},
   description: { type: String, required: true },
-}, {
-  timestamps: true,
 });
 
 const Notes = mongoose.model('Notes', notesSchema);
