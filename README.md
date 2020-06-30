@@ -41,7 +41,7 @@
     <p>Add some dummy data inside each of them so that it will be easier to test some initial GET requests.</p>
   </li>
   
-  <li><p>Run the folowing command/s to install the dependencies:</p>
+  <li><p>Run the folowing command to install the dependencies:</p>
   
   ```
   npm install
