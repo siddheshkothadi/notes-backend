@@ -4,14 +4,12 @@ const User = require('./models/user.model')
 
 // serialize the user.id to save in the cookie session
 // so the browser will remember the user when login
-
 passport.serializeUser((user, done) => {
   console.log(user)
   done(null, user.id);
 });
 
 // deserialize the cookieUserId to user in the database
-
 passport.deserializeUser((id, done) => {
     User.findById(id)
       .then(user => {
@@ -30,18 +28,17 @@ passport.use(new GoogleStrategy({
   },
   async (request, accessToken, refreshToken, profile, done) => {
     const currentUser = await User.findOne({googleId : profile.id});
-      // create new user if the database doesn't have this user
       if (!currentUser) {
+        console.log(JSON.stringify(profile))
         const newUser = await new User({
           googleId : profile.id,
-          name : profile.name.givenName + ' ' + profile.name.familyName,
+          name : profile.displayName,
           picture : profile.picture
         }).save();
         if (newUser) {
           done(null, newUser);
         }
       }
-    console.log("here, current user = "+ currentUser)
     done(null, currentUser);
   }
 ));

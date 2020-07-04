@@ -55,15 +55,6 @@ app.use('/notes', notesRouter);
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 
-
-/* ???????????????????????????????????????????????????????????? */
-// const authCheck = (req, res, next) => {
-//   next();
-// };
-// app.get("/", authCheck, (req, res) => {
-//   res.status(200)
-// });
-
 const authCheck = (req, res, next) => {
   if (!req.user) {
     res.status(401).json({
@@ -89,7 +80,7 @@ app.get("/", authCheck, (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
-    console.log(`NODE_ENV = ${process.env.NODE_ENV}`); 
+    console.log(`NODE_ENV = ${process.env.NODE_ENV}`);
 });
 
 module.exports = app;
