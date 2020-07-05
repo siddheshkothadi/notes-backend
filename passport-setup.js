@@ -1,6 +1,7 @@
 const passport = require("passport");
 const GoogleStrategy = require( 'passport-google-oauth2' ).Strategy;
 const User = require('./models/user.model')
+require('dotenv').config();
 
 // serialize the user.id to save in the cookie session
 // so the browser will remember the user when login
@@ -21,8 +22,8 @@ passport.deserializeUser((id, done) => {
 });
 
 passport.use(new GoogleStrategy({
-    clientID:     '564708284077-oong28v8d1066b161j0tduekjkrlns0g.apps.googleusercontent.com',
-    clientSecret: 'UdEmyW0enFk4OtCwFwX9TvTC',
+    clientID:     process.env.CLIENT_ID,
+    clientSecret: process.env.CLIENT_SECRET,
     callbackURL: "/auth/google/callback",
     passReqToCallback   : true
   },

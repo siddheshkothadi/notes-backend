@@ -9,7 +9,10 @@ router.route('/').get((req,res) => {
 
 router.route('/add').post((req, res) => {
   const googleId = req.body.googleId;
-  const newUser = new User({username,googleId});
+  const name = req.body.name;
+  const picture = req.body.picture;
+
+  const newUser = new User({googleId,name,picture});
 
   newUser.save()
     .then(() => res.json('User added!'))

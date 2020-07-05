@@ -41,7 +41,7 @@ app.use(passport.initialize());
 // deserialize cookie from the browser
 app.use(passport.session());
 
-// app.use(express.json());
+app.use(express.json());
 
 app.use(cors(
   {
