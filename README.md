@@ -5,7 +5,7 @@
 
 <ul>
   <li><p>First, make sure you have node and nodemon installed!</p>
-  <p>Check if node is installed by running the following command in your terminal:<p/>
+  <p>Check if node is installed by running the following command in your terminal:</p>
   
   ```
   node -v
