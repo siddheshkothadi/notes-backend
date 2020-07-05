@@ -12,7 +12,7 @@ const cookieSession = require("cookie-session");
 const cookieParser = require("cookie-parser");
 
 require('dotenv').config();
-const port = process.env.PORT || 6969;
+const port = process.env.PORT || 5000;
 
 let uri = '';
 process.env.NODE_ENV!=='test' ? uri = process.env.ATLAS_URI : uri = process.env.ATLAS_TEST_URI;
