@@ -31,8 +31,7 @@
   </li>
   
   <li>
-    <p>Paste your ATLAS_URI & ATLAS_TEST_URI inside .env file.</p>
-    <p>Make sure you replace &ltpassword&gt with the password that you have created & &ltdbname&gt with the name of your respective databases in MongoDB, i.e notes_app for NODE_ENV = 'dev' and test for NODE_ENV = 'test' inside .env file.</p>
+    <p>Paste ATLAS_URI, ATLAS_TEST_URI, CLIENT_ID, CLIENT_SECRET, COOKIE_KEY inside .env file.</p>
   </li>
   
   <li><p>Run the folowing command to install the dependencies:</p>
@@ -54,10 +53,10 @@
   npm run dev
   ```
   
-  <p>Open the following link on your browser to run the server(default port is 3000):</p>
+  <p>Open the following link on your browser to run the server(default port is 5000):</p>
   
   ```
-  http://localhost:3000/
+  http://localhost:5000/
   ```
   
   </li>
