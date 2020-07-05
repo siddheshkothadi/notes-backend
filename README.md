@@ -25,9 +25,12 @@
   git clone https://github.com/siddheshkothadi/notes-backend
   ```
   
+  <p>To move inside the cloned repository:</p>
+  
   ```
   cd notes-backend
   ```
+  
   </li>
   
   <li>
