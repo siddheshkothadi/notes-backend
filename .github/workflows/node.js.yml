@@ -31,3 +31,6 @@ jobs:
         CI: true
         ATLAS_URI: ${{ secrets.ATLAS_URI }}
         ATLAS_TEST_URI: ${{ secrets.ATLAS_TEST_URI }}
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        COOKIE_KEY: ${{ secrets.COOKIE_KEY }}

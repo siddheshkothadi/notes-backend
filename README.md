@@ -5,7 +5,7 @@
 
 <ul>
   <li><p>First, make sure you have node and nodemon installed!</p>
-  <p>Check if node is installed by running the following command in your terminal:<p/>
+  <p>Check if node is installed by running the following command in your terminal:</p>
   
   ```
   node -v
@@ -25,23 +25,19 @@
   git clone https://github.com/siddheshkothadi/notes-backend
   ```
   
+  <p>To move inside the cloned repository:</p>
+  
   ```
   cd notes-backend
   ```
+  
   </li>
   
   <li>
-    <p>Paste/Replace your ATLAS_URI & ATLAS_TEST_URI inside .env file.</p>
-    <p>Make sure you replace &ltpassword&gt with the password that you have created & &ltdbname&gt with the name of your respective databases in MongoDB, i.e notes_app for NODE_ENV = 'dev' and test for NODE_ENV = 'test' inside .env file.</p>
-    <p>Make two collections inside each of your databases with following names:</p>
-    <ul>
-      <li>notes</li>
-      <li>users</li>
-    </ul>
-    <p>Add some dummy data inside each of them so that it will be easier to test some initial GET requests.</p>
+    <p>Paste ATLAS_URI, ATLAS_TEST_URI, CLIENT_ID, CLIENT_SECRET, COOKIE_KEY inside .env file.</p>
   </li>
   
-  <li><p>Run the folowing command/s to install the dependencies:</p>
+  <li><p>Run the folowing command to install the dependencies:</p>
   
   ```
   npm install
@@ -60,10 +56,10 @@
   npm run dev
   ```
   
-  <p>Open the following link on your browser to run the server(default port is 3000):</p>
+  <p>Open the following link on your browser to run the server(default port is 5000):</p>
   
   ```
-  http://localhost:3000/
+  http://localhost:5000/
   ```
   
   </li>

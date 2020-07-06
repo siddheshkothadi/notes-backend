@@ -37,7 +37,12 @@ describe('Users', () => {
   //Test for /POST user/add
   describe('/POST user', () => {
     it('POST a user at users/add', (done) => {
-      const newUser = new User({username:"test user"});
+      const newUser = new User({
+        googleId:"TestID",
+        name:"Test User",
+        picture:"http://testurl.com/user_img.png"
+      });
+
       chai.request(server)
       .post('/users/add')
       .send(newUser)
