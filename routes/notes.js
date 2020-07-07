@@ -23,8 +23,10 @@ router.route('/add').post((req, res) => {
   .catch(err => res.status(400).json('Error: ' + err));
 });
 
-router.route('/:id').get((req, res) => {
-  Note.find({username : req.params.id})
+
+// Using this to fetch notes of a particular user with googleId
+router.route('/:googleId').get((req, res) => {
+  Note.find({googleId : req.params.googleId})
     .then(note => res.json(note))
     .catch(err => res.status(400).json('Error: ' + err));
 });
