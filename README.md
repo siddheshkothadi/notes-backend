@@ -22,7 +22,7 @@
   <li><p>Clone this repository by running the following command:</p>
   
   ```
-  git clone https://github.com/chaudhariyash10/notes-backend
+  git clone https://github.com/siddheshkothadi/notes-backend
   ```
   
   <p>To move inside the cloned repository:</p>
