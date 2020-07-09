@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('express');//This is change made in second pull request
 const cors = require('cors');
 const app = express();
 const mongoose = require('mongoose');
@@ -19,10 +19,10 @@ process.env.NODE_ENV!=='test' ? uri = process.env.ATLAS_URI : uri = process.env.
 
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }
 );
-const connection = mongoose.connection;
+const connection = mongoose.connection;      
 connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
-})
+}) //Connection established
 
 app.use(
   cookieSession({

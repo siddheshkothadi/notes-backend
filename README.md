@@ -37,7 +37,7 @@
     <p>Paste ATLAS_URI, ATLAS_TEST_URI, CLIENT_ID, CLIENT_SECRET, COOKIE_KEY inside .env file.</p>
   </li>
   
-  <li><p>Run the folowing command to install the dependencies:</p>
+  <li><p>Run the folowing command to install the dependencies</p>
   
   ```
   npm install
