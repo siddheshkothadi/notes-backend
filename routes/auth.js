@@ -9,11 +9,15 @@ router.get("/login/success", (req, res) => {
       success: true,
       message: "user has successfully authenticated",
       user: req.user,
+      body: 'body',
       cookies: req.cookies
     });
   }
   else{
-    console.log("login/success doesn't respond a valid user")
+    res.json({
+      success : false,
+      message : 'user successfully logged out'
+    })
   }
 });
 

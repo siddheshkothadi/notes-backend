@@ -8,12 +8,12 @@ router.route('/').get((req,res) => {
 });
 
 router.route('/add').post((req, res) => {
-  const username = req.body.username;
+  const googleId = req.body.googleId;
   const title = req.body.title;
   const description = req.body.description;
 
   const newNote = new Note({
-    username,
+    googleId,
     title,
     description
   });
@@ -23,11 +23,10 @@ router.route('/add').post((req, res) => {
   .catch(err => res.status(400).json('Error: ' + err));
 });
 
-
 // Using this to fetch notes of a particular user with googleId
 router.route('/:googleId').get((req, res) => {
   Note.find({googleId : req.params.googleId})
-    .then(note => res.json(note))
+    .then(note => res.status(200).json(note))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
