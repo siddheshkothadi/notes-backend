@@ -7,9 +7,9 @@ const passportSetup = require('./passport-setup')
 const notesRouter = require('./routes/notes');
 const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
-const session = require("express-session");
 const cookieSession = require("cookie-session");
 const cookieParser = require("cookie-parser");
+// const session = require("express-session");
 
 require('dotenv').config();
 const port = process.env.PORT || 5000;
@@ -18,16 +18,20 @@ let uri = '';
 process.env.NODE_ENV!=='test' ? uri = process.env.ATLAS_URI : uri = process.env.ATLAS_TEST_URI;
 
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }
-);
+).catch(error => console.log(error));
+
 const connection = mongoose.connection;      
+
+connection.on('error', console.error.bind(console,'connection error'));
+
 connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
-}) //Connection established
+})
 
 app.use(
   cookieSession({
     name: "session",
-    keys: ['thisisawesome'],
+    keys: [process.env.COOKIE_KEY],
     maxAge: 24 * 60 * 60 * 100
   })
 );
