@@ -30,8 +30,8 @@ router.route('/:googleId').get((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-router.route('/:id').delete((req, res) => {
-  Note.deleteOne({username:req.params.id})
+router.route('/:_id').delete((req, res) => {
+  Note.deleteOne({_id:req.params._id})
     .then(() => res.json('Note deleted.'))
     .catch(err => res.status(400).json('Error: ' + err));
 });
