@@ -36,10 +36,9 @@ router.route('/:_id').delete((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-router.route('/update/:id').put((req, res) => {
-  Note.findOne({username:req.params.id})
+router.route('/update/:_id').put((req, res) => {
+  Note.findOne({_id:req.params._id})
     .then(note => {
-      note.username = req.body.username;
       note.title = req.body.title;
       note.description = req.body.description;
 
