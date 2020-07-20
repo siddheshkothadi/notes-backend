@@ -51,6 +51,15 @@
   ```
   
   </li>
+  <li>Finally, click on the <b>CONNECT</b> button of your cluster <b>-></b> Select <b>Connect your application</b> and note the uri.
+    <p><b>NOTE : </b>Replace &lt;password&gt; with the password for your username. Replace &lt;dbname&gt; with the name of the database, i.e. <b>notes_app</b> for <b>ATLAS_URI</b> and <b>test</b> for <b>ATLAS_TEST_URI</b>.</p>
+  </li>
+</ul>
+
+### Generating Google CLIENT_ID and CLIENT_SECRET
+
+<ul>
+  <li>Follow <a href='https://developers.google.com/identity/protocols/oauth2/web-server'>these</a> instructions to generate the CLIENT_ID and CLIENT_SECRET</li>
 </ul>
 
 ### Installing
@@ -68,8 +77,7 @@
   </li>
   
   <li>
-  <h3>Setting up the </h3>
-<!--     <p>Paste ATLAS_URI, ATLAS_TEST_URI, CLIENT_ID, CLIENT_SECRET, COOKIE_KEY inside .env file.</p> -->
+    <p>Paste the previously generated ATLAS_URI (by replacing &lt;dbname&gt; with notes_app), ATLAS_TEST_URI (by replacing &lt;dbname&gt; with test), CLIENT_ID and CLIENT_SECRET inside .env file. You can set any value for COOKIE_KEY.</p>
   </li>
   
   <li><p>Run the folowing command to install the dependencies</p>
@@ -90,8 +98,7 @@
   ```
   npm run dev
   ```
-  <p>Your server should now be running on PORT 5000</p>
+  <p>Hurray! Your server should be running on PORT 5000</p>
   </li>
-  
-  <li>Test GET, POST, PUT, DELETE requests using <a href="https://www.postman.com/">Postman.</a></li>
+  <li>You've setup the server. Now, you can start the front end for <a href='https://github.com/siddheshkothadi/notes-frontend'>notes web app</a> or you can test GET, POST, PUT, DELETE requests using <a href="https://www.postman.com/">Postman.</a></li>
   </ul>
