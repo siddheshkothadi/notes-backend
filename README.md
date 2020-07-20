@@ -1,5 +1,5 @@
-# Notes (RESTful API using Express and Node)
-## Back end for notes web app.
+# Notes - RESTful API using Express and Node
+### Back end for notes web app
 
 ### Follow the steps to get started:
 
