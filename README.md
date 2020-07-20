@@ -1,4 +1,4 @@
-# Notes - REST API using Express and Node
+# Notes - RESTful API using Express and Node
 
 ![Node.js CI](https://github.com/siddheshkothadi/notes-backend/workflows/Node.js%20CI/badge.svg)
 
@@ -57,7 +57,7 @@
   </li>
 </ul>
 
-### Generating Google CLIENT_ID and CLIENT_SECRET
+### Generating Google Client Id and Client Secret
 
 <ul>
   <li>Follow <a href='https://developers.google.com/identity/protocols/oauth2/web-server'>these</a> instructions to generate the CLIENT_ID and CLIENT_SECRET</li>
