@@ -1,5 +1,7 @@
 # Notes - RESTful API using Express and Node
 
+![Node.js CI](https://github.com/siddheshkothadi/notes-backend/workflows/Node.js%20CI/badge.svg)
+
 <a href='https://github.com/siddheshkothadi/'><img src='https://img.shields.io/github/followers/siddheshkothadi?label=Follow&style=social' alt='follow'/></a>
 <a href='https://twitter.com/siddhesh_kt'><img src='https://img.shields.io/twitter/follow/siddhesh_kt?label=Follow%20siddhesh_kt&style=social' alt='follow'/></a>
 
