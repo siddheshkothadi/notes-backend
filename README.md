@@ -103,3 +103,6 @@
   </li>
   <li>You've setup the server. Now, you can start the front end for <a href='https://github.com/siddheshkothadi/notes-frontend'>notes web app</a> or you can test GET, POST, PUT, DELETE requests using <a href="https://www.postman.com/">Postman.</a></li>
   </ul>
+  
+## License
+<p>This project is licensed under the MIT License - see the <a href='https://github.com/siddheshkothadi/notes-backend/blob/master/LICENSE.md'>LICENSE.md</a> file for details</p>
