@@ -61,6 +61,21 @@
 
 <ul>
   <li>Follow <a href='https://developers.google.com/identity/one-tap/web/guides/get-google-api-clientid'>these</a> instructions to generate the CLIENT_ID and CLIENT_SECRET</li>
+  <li>While generating OAuth Client ID :
+    <ul>
+      <li>Add following URIs to <b>Authorized JavaScript origins :</b>
+        <ol>
+          <li>http://localhost:3000</li>
+          <li>http://localhost:5000</li>
+        </ol>
+      </li>
+      <li>Add following URI to <b>Authorized redirect URIs</b> section :
+        <ol>
+          <li>http://localhost:5000/auth/google/callback</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
 </ul>
 
 ### Installing
