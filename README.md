@@ -60,7 +60,7 @@
 ### Generating Google Client Id and Client Secret
 
 <ul>
-  <li>Follow <a href='https://developers.google.com/identity/protocols/oauth2/web-server'>these</a> instructions to generate the CLIENT_ID and CLIENT_SECRET</li>
+  <li>Follow <a href='https://developers.google.com/identity/one-tap/web/guides/get-google-api-clientid'>these</a> instructions to generate the CLIENT_ID and CLIENT_SECRET</li>
 </ul>
 
 ### Installing
