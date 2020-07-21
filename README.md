@@ -65,13 +65,13 @@
     <ul>
       <li>Add following URIs to <b>Authorized JavaScript origins :</b>
         <ol>
-          <li>http://localhost:3000</li>
-          <li>http://localhost:5000</li>
+          <li><b>http://localhost:3000</b></li>
+          <li><b>http://localhost:5000</b></li>
         </ol>
       </li>
       <li>Add following URI to <b>Authorized redirect URIs</b> section :
         <ol>
-          <li>http://localhost:5000/auth/google/callback</li>
+          <li><b>http://localhost:5000/auth/google/callback</b></li>
         </ol>
       </li>
     </ul>
